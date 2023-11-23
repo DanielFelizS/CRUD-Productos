@@ -5,7 +5,7 @@ from tkinter import ttk
 
 def conectar():
     try:
-        conexion = pyodbc.connect('DRIVER={SQL Server};SERVER=DESKTOP-HIESJ07;DATABASE=Almacén;Trusted_Connection=yes')
+        conexion = pyodbc.connect('DRIVER={SQL Server};SERVER='Tu dispositivo';DATABASE=Almacén;Trusted_Connection=yes')
         print('La conexión fue exitosa')
         return conexion
     except Exception as ex:
